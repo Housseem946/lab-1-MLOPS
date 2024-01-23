@@ -4,13 +4,11 @@ on:
   push:
     branches:
     - main
-    - feature/hrezgui
-    - feature/test-build
+    - feature/**
   pull_request:
     branches: 
     - main
-    - feature/hrezgui
-    - feature/test-build
+    - feature/**
 jobs:
   build:
     runs-on: ubuntu-latest
